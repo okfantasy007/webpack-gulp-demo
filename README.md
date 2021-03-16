@@ -1,10 +1,10 @@
 # webpack-gulp-demo
 webpack-gulp-demo
 
-webpack
+webpack：
 
 yarn build
 
-gulp
+gulp：
 
 gulp client
