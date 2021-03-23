@@ -386,7 +386,7 @@ function getAssetsData() {
                 },
                 "information": {
                     "name": "test nomaral0706",
-                    "display_name": "wuyj0706",
+                    "display_name": "Wondershare Customer Service",
                     "type": 2,
                     "language": "en",
                     "skip": "跳一跳，皮一下很开心！http://crm-web.wondershare.comhttp://cr",
@@ -861,7 +861,7 @@ var effectAssets = {
             "param": ""
         },
         {
-            "src": folderPrefix + "/static/js/main_c4c647fd_chunk.js",
+            "src": folderPrefix + "/static/js/main_25959b03_chunk.js",
             "param": "value"
         },
         {
@@ -1069,20 +1069,20 @@ function insertMeta() {
 // 支持部分配置项支持pc和移动端分开配置，如果是移动端，需要进一步处理移动端配置数据，覆盖pc原配置数据
 function handleMobileInformation(data) {
     var information = data.information;
-    if (information.mobile_theme !== undefined) {
+    if (information.mobile_theme !== undefined && information.mobile_theme !== null && information.mobile_theme !== "") {
         information.theme = information.mobile_theme;
     }
-    if (information.mobile_chatbot_icon !== undefined) {
+    if (information.mobile_chatbot_icon !== undefined && information.mobile_chatbot_icon !== null && information.mobile_chatbot_icon !== "") {
         information.chatbot_icon = information.mobile_chatbot_icon;
     }
     if (information.notice) {
-        if (information.notice.mobile_show_notice !== undefined) {
+        if (information.notice.mobile_show_notice !== undefined && information.mobile_show_notice !== null && information.mobile_show_notice !== "") {
             information.notice.show_notice = information.notice.mobile_show_notice;
         }
-        if (information.notice.mobile_title !== undefined) {
+        if (information.notice.mobile_title !== undefined && information.mobile_title !== null && information.mobile_title !== "") {
             information.notice.title = information.notice.mobile_title;
         }
-        if (information.notice.mobile_sub_title !== undefined) {
+        if (information.notice.mobile_sub_title !== undefined && information.mobile_sub_title !== null && information.mobile_sub_title !== "") {
             information.notice.sub_title = information.notice.mobile_sub_title;
         }
     }
