@@ -6,7 +6,8 @@ module.exports = {
     mode: "production", // "production" | "development" | "none"
     entry: {
         'snippet-chatbot-mock-client-webpack': path.resolve(__dirname, '../js/snippet-chatbot-mock-client.js'),
-        'snippet-chatbot-mock-client-ga-webpack': path.resolve(__dirname, '../js/snippet-chatbot-mock-client-ga.js')
+        'snippet-chatbot-mock-client-ga-webpack': path.resolve(__dirname, '../js/snippet-chatbot-mock-client-ga.js'),
+        'snippet-test': path.resolve(__dirname, '../js/snippet-chatbot-test.js')
     },
     output: {
         path: path.resolve(__dirname, '../webpack')
